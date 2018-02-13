@@ -2,22 +2,19 @@
 
 function main () {
 // Wrap every letter in a span
-$('.ml9 .letters').each(function(){
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-});
 
-anime.timeline({loop: false})
+var scrollAnimation = anime.timeline({loop: false})
   .add({
-    targets: '.ml9 .letter',
+    targets: '.titulos .animacion',
     scale: [0, 1],
     duration: 1500,
     elasticity: 600,
+      autoplay: false,
     delay: function(el, i) {
       return 45 * (i+1)
     }
   })
 }
-
 
 $(document).ready(main)
 

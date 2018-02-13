@@ -1,13 +1,16 @@
 
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
 
-
-.ml9 {
+.titulos {
   font-family:Arial, Helvetica, sans-serif;
 }
 
-.ml9 .letter {
+.titulos .animacion {
   transform-origin: 10% 50%;
-  display: inline-block;
+  display: inline-block
 }
 
 
