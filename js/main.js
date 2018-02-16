@@ -1,5 +1,5 @@
 /* global $ */
-
+/* global anime */
 "use strict";
 
 $(document).ready(function(){
